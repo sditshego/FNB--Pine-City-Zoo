@@ -1,0 +1,287 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*===============HEADER ===================*/
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url(images/wood-bg.png);
+    background-repeat: repeat-x;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+   
+}
+
+/*===============TOP TABS ===================*/
+
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: #2e8b57;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#tabs-top a{
+    float:left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+#tabs-top a:hover {
+    background-color: lightgreen;
+}
+   
+/*=============== MAIN-HOME ===================*/ 
+
+#main-home {
+    margin-top: 120px;
+    
+}
+
+/*=============== BOTTOM-TABS ===================*/ 
+
+#tabs-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;  
+    
+}
+#tabs-bottom a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+/*=============== MAIN ===================*/ 
+
+#main{
+    margin-top: 119px;
+    background: url(images/map-blur.png);
+    background-repeat: repeat-y;
+}
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+/*=============== INFO BOX ===================*/ 
+
+a.info-box{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+    border-radius: 10px;
+}
+.info-box img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572000;
+}
+
+.info-box p{
+    margin: 0;
+    padding-bottom: 0;
+    width: 90%;
+    color: #131313;
+    font-size: 14px;
+    opacity: 0.5;
+        
+}
+.info-box img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+    
+}
+a.info-box:hover {
+    background-color: #ffffff;
+    transform: scale(1.02);
+}
+
+/*=============== INFO BOX FULL===================*/ 
+#info-box-full{
+    background-color: rgba(255,255,255,.8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    
+}
+#info-box-full img{
+    width: 100%;
+}
+#info-box-full h3{
+    text-align: center;
+}
+
+/*=============== WEATHER===================*/ 
+
+img.info-box-weather-icon{
+    height: 30px;
+    width: 30px !important;
+    margin: 10px;
+    float: left;
+   
+}
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    color: #2e8b57;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+table{
+    width:100%;
+    
+}
+td{
+    border-top: 1px solid #131313;
+}
+
+/*=============== FORM===================*/ 
+
+input{
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+.button {
+    display: block;
+    width: 100%;
+    background-color: forestgreen;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #1e6f3e;
+}
+
+/*===============MAP===================*/ 
+
+<style>
+  area {
+    cursor: pointer;
+  }
+
+  /* Optional: Add visible hover indication using JS overlay */
+  .hover-label {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  #map-container {
+    position: relative;
+    display: inline-block;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
